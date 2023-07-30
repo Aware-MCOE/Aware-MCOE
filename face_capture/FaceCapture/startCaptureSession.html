@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the startCaptureSession method from the FaceCapture class, for the Dart programming language.">
+  <title>startCaptureSession method - FaceCapture class - face_capture library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">face_capture</a></li>
+    <li><a href="../../face_capture/face_capture-library.html">face_capture</a></li>
+    <li><a href="../../face_capture/FaceCapture-class.html">FaceCapture</a></li>
+    <li class="self-crumb">startCaptureSession method</li>
+  </ol>
+  <div class="self-name">startCaptureSession</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">startCaptureSession</span> method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype">void</span>
+<span class="name ">startCaptureSession</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="startCaptureSession-param-workflow"><span class="type-annotation"><a href="../../face_capture/Workflow-class.html">Workflow</a></span> <span class="parameter-name">workflow</span>, </span></li>
+<li><span class="parameter" id="startCaptureSession-param-camera"><span class="type-annotation"><a href="../../face_capture/Camera-class.html">Camera</a></span> <span class="parameter-name">camera</span></span></li>
+</ol>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">void startCaptureSession(Workflow workflow, Camera camera) {
+  Pointer&lt;Void&gt; libraryPtr = Pointer&lt;Void&gt;.fromAddress(_libraryPtr);
+  Pointer&lt;Void&gt; workflowPtr = Pointer&lt;Void&gt;.fromAddress(workflow._workflowPtr);
+  Pointer&lt;Void&gt; cameraPtr = Pointer&lt;Void&gt;.fromAddress(camera._cameraPtr);
+  _bindings.startCaptureSession(libraryPtr, workflowPtr, cameraPtr);
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">face_capture</a></li>
+  <li><a href="../../face_capture/face_capture-library.html">face_capture</a></li>
+  <li><a href="../../face_capture/FaceCapture-class.html">FaceCapture</a></li>
+  <li class="self-crumb">startCaptureSession method</li>
+</ol>
+
+
+    <h5>FaceCapture class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../face_capture/FaceCapture-class.html#constructors">Constructors</a></li>
+          <li><a href="../../face_capture/FaceCapture/FaceCapture.html">FaceCapture</a></li>
+
+
+        <li class="section-title inherited">
+          <a href="../../face_capture/FaceCapture-class.html#instance-properties">Properties</a>
+        </li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+        <li class="section-title"><a href="../../face_capture/FaceCapture-class.html#instance-methods">Methods</a></li>
+          <li><a href="../../face_capture/FaceCapture/captureSessionEnableAutoCapture.html">captureSessionEnableAutoCapture</a></li>
+          <li><a href="../../face_capture/FaceCapture/captureSessionGetCaptureRegion.html">captureSessionGetCaptureRegion</a></li>
+          <li><a href="../../face_capture/FaceCapture/createWorkflow.html">createWorkflow</a></li>
+          <li><a href="../../face_capture/FaceCapture/dispose.html">dispose</a></li>
+          <li><a href="../../face_capture/FaceCapture/getCameraList.html">getCameraList</a></li>
+          <li><a href="../../face_capture/FaceCapture/getCapturedImage.html">getCapturedImage</a></li>
+          <li><a href="../../face_capture/FaceCapture/getCaptureSessionState.html">getCaptureSessionState</a></li>
+          <li><a href="../../face_capture/FaceCapture/getEncryptedServerPackage.html">getEncryptedServerPackage</a></li>
+          <li><a href="../../face_capture/FaceCapture/getServerPackage.html">getServerPackage</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li><a href="../../face_capture/FaceCapture/startCaptureSession.html">startCaptureSession</a></li>
+          <li><a href="../../face_capture/FaceCapture/stopCaptureSession.html">stopCaptureSession</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+          <li><a href="../../face_capture/FaceCapture/version.html">version</a></li>
+
+        <li class="section-title inherited"><a href="../../face_capture/FaceCapture-class.html#operators">Operators</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    face_capture
+      1.0.001
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

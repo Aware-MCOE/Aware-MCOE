@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the AWCameraPreview class from the aw_camera_preview library, for the Dart programming language.">
+  <title>AWCameraPreview class - aw_camera_preview library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">face_capture</a></li>
+    <li><a href="../aw_camera_preview/aw_camera_preview-library.html">aw_camera_preview</a></li>
+    <li class="self-crumb">AWCameraPreview class</li>
+  </ol>
+  <div class="self-name">AWCameraPreview</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">AWCameraPreview</span> class 
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>A widget showing a live camera preview of the Aware Flutter Face Capture SDK</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        
+  <dt>Inheritance</dt>
+  <dd>
+    <ul class="gt-separated dark clazz-relationships">
+      <li><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></li>
+        <li><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree-class.html">DiagnosticableTree</a></li>
+        <li><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></li>
+        <li><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html">StatefulWidget</a></li>
+      <li>AWCameraPreview</li>
+    </ul>
+  </dd>
+
+        
+        
+
+
+
+        
+
+
+      </dl>
+    </section>
+
+    
+  <section class="summary offset-anchor" id="constructors">
+    <h2>Constructors</h2>
+
+    <dl class="constructor-summary-list">
+        <dt id="AWCameraPreview" class="callable">
+          <span class="name"><a href="../aw_camera_preview/AWCameraPreview/AWCameraPreview.html">AWCameraPreview</a></span><span class="signature">(<span class="parameter" id="-param-username">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">username</span>, </span><span class="parameter" id="-param-captureTimeOut"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">captureTimeOut</span>, </span><span class="parameter" id="-param-profileProperty"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">profileProperty</span>, </span><span class="parameter" id="-param-captureCompleted"><span class="type-annotation">void</span> <span class="parameter-name">captureCompleted</span>()?, </span><span class="parameter" id="-param-getCapturedImagePackage"><span class="type-annotation">void</span> <span class="parameter-name">getCapturedImagePackage</span>(<span class="parameter" id="param-capturedImagePackage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">capturedImagePackage</span></span>)?, </span><span class="parameter" id="-param-encryptionServerKey"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">encryptionServerKey</span>, </span><span class="parameter" id="-param-facePublicKey"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">facePublicKey</span> = <span class="default-value">&quot;&quot;</span>, </span><span class="parameter" id="-param-completedImageBoxFit"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/BoxFit.html">BoxFit</a></span> <span class="parameter-name">completedImageBoxFit</span> = <span class="default-value">BoxFit.cover</span>, </span><span class="parameter" id="-param-capturingImageBoxFit"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/BoxFit.html">BoxFit</a></span> <span class="parameter-name">capturingImageBoxFit</span> = <span class="default-value">BoxFit.cover</span>, </span><span class="parameter" id="-param-showFeedBack"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">showFeedBack</span> = <span class="default-value">false</span>, </span><span class="parameter" id="-param-cameraOrientation"><span class="type-annotation"><a href="../face_capture/CameraOrientation.html">CameraOrientation</a></span> <span class="parameter-name">cameraOrientation</span> = <span class="default-value">CameraOrientation.portrait</span>, </span><span class="parameter" id="-param-cameraPosition"><span class="type-annotation"><a href="../face_capture/CameraPosition.html">CameraPosition</a></span> <span class="parameter-name">cameraPosition</span> = <span class="default-value">CameraPosition.front</span>, </span><span class="parameter" id="-param-feedbackALignment"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/Alignment-class.html">Alignment</a></span> <span class="parameter-name">feedbackALignment</span> = <span class="default-value">Alignment.topCenter</span>, </span><span class="parameter" id="-param-feedbackPadding"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/EdgeInsets-class.html">EdgeInsets</a></span> <span class="parameter-name">feedbackPadding</span> = <span class="default-value">const EdgeInsets.only(top: 10)</span>, </span><span class="parameter" id="-param-feedbackTextstyle"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/painting/TextStyle-class.html">TextStyle</a></span> <span class="parameter-name">feedbackTextstyle</span> = <span class="default-value">const TextStyle(fontSize: 20, color: Colors.black)</span>, </span><span class="parameter" id="-param-layoutWidget"><span class="type-annotation"><a href="../aw_camera_preview/LayoutWidget.html">LayoutWidget</a>?</span> <span class="parameter-name">layoutWidget</span>, </span><span class="parameter" id="-param-previewPosition"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> <span class="parameter-name">previewPosition</span>, </span><span class="parameter" id="-param-imagePreviewShape"><span class="type-annotation"><a href="../aw_camera_preview/ImagePreviewShape.html">ImagePreviewShape</a>?</span> <span class="parameter-name">imagePreviewShape</span>, </span><span class="parameter" id="-param-feedbackPoistionRight"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">feedbackPoistionRight</span> = <span class="default-value">0</span>, </span><span class="parameter" id="-param-feedbackPositionLeft"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">feedbackPositionLeft</span>, </span><span class="parameter" id="-param-feedbackPositionBottom"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">feedbackPositionBottom</span>, </span><span class="parameter" id="-param-feedbackPositionHeight"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">feedbackPositionHeight</span>, </span><span class="parameter" id="-param-feedbackPositionWidth"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">feedbackPositionWidth</span>, </span><span class="parameter" id="-param-feedbackPositionTop"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> <span class="parameter-name">feedbackPositionTop</span> = <span class="default-value">0</span>, </span><span class="parameter" id="-param-streamController"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-async/StreamController-class.html">StreamController</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span>?</span> <span class="parameter-name">streamController</span>, </span><span class="parameter" id="-param-stopCapture"><span class="type-annotation">void</span> <span class="parameter-name">stopCapture</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Function-class.html">Function</a></span></span>)?, </span><span class="parameter" id="-param-appBar"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/material/AppBar-class.html">AppBar</a>?</span> <span class="parameter-name">appBar</span>, </span><span class="parameter" id="-param-cameraPreviewAppbar"><span class="type-annotation"><a href="../widgets_camera_preview_appbar/CameraPreviewAppbar-class.html">CameraPreviewAppbar</a>?</span> <span class="parameter-name">cameraPreviewAppbar</span>, </span><span class="parameter" id="-param-key"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> <span class="parameter-name">key</span>}</span>)</span>
+        </dt>
+        <dd>
+          Creates a preview widget for the given instance of FaceCapture, Workflow, username and timeout values.
+        </dd>
+    </dl>
+  </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="appBar" class="property">
+  <span class="name"><a class="deprecated" href="../aw_camera_preview/AWCameraPreview/appBar.html">appBar</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/material/AppBar-class.html">AppBar</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="cameraOrientation" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/cameraOrientation.html">cameraOrientation</a></span>
+  <span class="signature">&#8594; <a href="../face_capture/CameraOrientation.html">CameraOrientation</a></span> 
+
+</dt>
+<dd>
+  An enumeration of the possible camera orientations including CameraOrientation.portrait and CameraOrientation.landscape
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="cameraPosition" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/cameraPosition.html">cameraPosition</a></span>
+  <span class="signature">&#8594; <a href="../face_capture/CameraPosition.html">CameraPosition</a></span> 
+
+</dt>
+<dd>
+  This is an enumeration representing either the front facing camera or the main (back) camera of a device.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="cameraPreviewAppbar" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/cameraPreviewAppbar.html">cameraPreviewAppbar</a></span>
+  <span class="signature">&#8594; <a href="../widgets_camera_preview_appbar/CameraPreviewAppbar-class.html">CameraPreviewAppbar</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="capabilityS" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/capabilityS.html">capabilityS</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-isolate/Capability-class.html">Capability</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="captureCompleted" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/captureCompleted.html">captureCompleted</a></span>
+  <span class="signature">&#8594; (void Function<span class="signature">()</span>?)</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="captureTimeOut" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/captureTimeOut.html">captureTimeOut</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  The capture timeout of the given FaceCapture instance. A timeout of 0.0 indicates there is no timeout.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="capturingImageBoxFit" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/capturingImageBoxFit.html">capturingImageBoxFit</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/painting/BoxFit.html">BoxFit</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="completedImageBoxFit" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/completedImageBoxFit.html">completedImageBoxFit</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/painting/BoxFit.html">BoxFit</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="encryptionServerKey" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/encryptionServerKey.html">encryptionServerKey</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="facePublicKey" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/facePublicKey.html">facePublicKey</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedback" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedback.html">feedback</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="feedbackALignment" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackALignment.html">feedbackALignment</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/painting/Alignment-class.html">Alignment</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackPadding" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackPadding.html">feedbackPadding</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/painting/EdgeInsets-class.html">EdgeInsets</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackPoistionRight" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackPoistionRight.html">feedbackPoistionRight</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackPositionBottom" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionBottom.html">feedbackPositionBottom</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackPositionHeight" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionHeight.html">feedbackPositionHeight</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackPositionLeft" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionLeft.html">feedbackPositionLeft</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackPositionTop" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionTop.html">feedbackPositionTop</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackPositionWidth" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionWidth.html">feedbackPositionWidth</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackStream" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackStream.html">feedbackStream</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-async/Stream-class.html">Stream</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">late</span><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="feedbackTextstyle" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/feedbackTextstyle.html">feedbackTextstyle</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/painting/TextStyle-class.html">TextStyle</a></span> 
+
+</dt>
+<dd>
+  Face Capture's SDK offers feedback on how a user should better orient themselves to allow for an effective Face Capture.
+This is returned as a string that can be fully customized.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="getCapturedImagePackage" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/getCapturedImagePackage.html">getCapturedImagePackage</a></span>
+  <span class="signature">&#8594; (void Function<span class="signature">(<span class="parameter" id="param-capturedImagePackage"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">capturedImagePackage</span></span>)</span>?)</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="imagePreviewShape" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/imagePreviewShape.html">imagePreviewShape</a></span>
+  <span class="signature">&#8594; <a href="../aw_camera_preview/ImagePreviewShape.html">ImagePreviewShape</a>?</span> 
+
+</dt>
+<dd>
+  Image preview shape dictates the clipping shape of the image presented during the the face capture session.
+The options include
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="isCapturing" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/isCapturing.html">isCapturing</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="isPausedS" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/isPausedS.html">isPausedS</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="isRunning" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/isRunning.html">isRunning</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="key" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/foundation/Key-class.html">Key</a>?</span> 
+
+</dt>
+<dd class="inherited">
+  Controls how one widget replaces another widget in the tree.
+  <div class="features"><span class="feature">final</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="layoutWidget" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/layoutWidget.html">layoutWidget</a></span>
+  <span class="signature">&#8594; <a href="../aw_camera_preview/LayoutWidget.html">LayoutWidget</a>?</span> 
+
+</dt>
+<dd>
+  Use the layoutWidget to determine the layout of the image preview in relation to the feedback messages.
+The default layout is a stack with the feedback message overlayed on top of the image preview.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="previewPosition" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/previewPosition.html">previewPosition</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a>?</span> 
+
+</dt>
+<dd>
+  If layoutWidget is set then this is value of 1 or 2 determins the position of the image preview in the layout widget relative to that of the feedback text
+Example: Setting 1 with a LayoutWidget.column puts the camera preview at the top of the column.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="profileProperty" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/profileProperty.html">profileProperty</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="receivePort" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/receivePort.html">receivePort</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-isolate/ReceivePort-class.html">ReceivePort</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object.
+  <div class="features"><span class="feature">read-only</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="selectedCamera" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/selectedCamera.html">selectedCamera</a></span>
+  <span class="signature">&#8596; <a href="../face_capture/Camera-class.html">Camera</a></span> 
+
+</dt>
+<dd>
+  Selected Camera for Face Capture to use to get frames.
+  <div class="features"><span class="feature">late</span><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="serverPackage" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/serverPackage.html">serverPackage</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="showFeedBack" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/showFeedBack.html">showFeedBack</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="status" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/status.html">status</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="statusStream" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/statusStream.html">statusStream</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-async/Stream-class.html">Stream</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">late</span><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="stopCapture" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/stopCapture.html">stopCapture</a></span>
+  <span class="signature">&#8594; (void Function<span class="signature">(<span class="parameter" id="param-"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Function-class.html">Function</a></span></span>)</span>?)</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="streamController" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/streamController.html">streamController</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-async/StreamController-class.html">StreamController</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>&gt;</span>?</span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="threadParameters" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/threadParameters.html">threadParameters</a></span>
+  <span class="signature">&#8596; <a href="../thread_pramaters/ThreadParameters-class.html">ThreadParameters</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">late</span><span class="feature">final</span></div>
+
+</dd>
+
+        <dt id="threadStatus" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/threadStatus.html">threadStatus</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  
+  <div class="features"><span class="feature">read / write</span></div>
+
+</dd>
+
+        <dt id="username" class="property">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/username.html">username</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> 
+
+</dt>
+<dd>
+  The username of the person whose face is being registered for the given instance of FaceCpature.
+  <div class="features"><span class="feature">final</span></div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
+    <h2>Methods</h2>
+    <dl class="callables">
+        <dt id="createElement" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/widgets/StatefulElement-class.html">StatefulElement</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Creates a <a href="https://api.flutter.dev/flutter/widgets/StatefulElement-class.html">StatefulElement</a> to manage this widget's location in the tree.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="createState" class="callable">
+  <span class="name"><a href="../aw_camera_preview/AWCameraPreview/createState.html">createState</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/widgets/State-class.html">State</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../aw_camera_preview/AWCameraPreview-class.html">AWCameraPreview</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates the mutable state for this widget at a given location in the tree.
+  <div class="features"><span class="feature">override</span></div>
+
+</dd>
+
+        <dt id="debugDescribeChildren" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a list of <code>DiagnosticsNode</code> objects describing this node's
+children.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="debugFillProperties" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></span><span class="signature">(<wbr><span class="parameter" id="debugFillProperties-param-properties"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticPropertiesBuilder-class.html">DiagnosticPropertiesBuilder</a></span> <span class="parameter-name">properties</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Add additional properties associated with the node.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a nonexistent method or property is accessed.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toDiagnosticsNode" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></span><span class="signature">(<wbr><span class="parameter" id="toDiagnosticsNode-param-name">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">name</span>, </span><span class="parameter" id="toDiagnosticsNode-param-style"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticsTreeStyle.html">DiagnosticsTreeStyle</a>?</span> <span class="parameter-name">style</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode-class.html">DiagnosticsNode</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a debug representation of the object that is used by debugging
+tools and by <a href="https://api.flutter.dev/flutter/foundation/DiagnosticsNode/toStringDeep.html">DiagnosticsNode.toStringDeep</a>.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></span><span class="signature">(<wbr><span class="parameter" id="toString-param-minLevel">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.info</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toStringDeep" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></span><span class="signature">(<wbr><span class="parameter" id="toStringDeep-param-prefixLineOne">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">prefixLineOne</span> = <span class="default-value">&#39;&#39;</span>, </span><span class="parameter" id="toStringDeep-param-prefixOtherLines"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a>?</span> <span class="parameter-name">prefixOtherLines</span>, </span><span class="parameter" id="toStringDeep-param-minLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.debug</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a string representation of this node and its descendants.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toStringShallow" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></span><span class="signature">(<wbr><span class="parameter" id="toStringShallow-param-joiner">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">joiner</span> = <span class="default-value">&#39;, &#39;</span>, </span><span class="parameter" id="toStringShallow-param-minLevel"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticLevel.html">DiagnosticLevel</a></span> <span class="parameter-name">minLevel</span> = <span class="default-value">DiagnosticLevel.debug</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Returns a one-line detailed description of the object.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="toStringShort" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html">toStringShort</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A short, textual description of this widget.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
+    <h2>Operators</h2>
+    <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator.
+  <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+    </dl>
+  </section>
+    
+    
+    
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">face_capture</a></li>
+  <li><a href="../aw_camera_preview/aw_camera_preview-library.html">aw_camera_preview</a></li>
+  <li class="self-crumb">AWCameraPreview class</li>
+</ol>
+
+
+    <h5>aw_camera_preview library</h5>
+    <ol>
+      <li class="section-title"><a href="../aw_camera_preview/aw_camera_preview-library.html#classes">Classes</a></li>
+        <li><a href="../aw_camera_preview/AWCameraPreview-class.html">AWCameraPreview</a></li>
+
+
+
+
+      <li class="section-title"><a href="../aw_camera_preview/aw_camera_preview-library.html#properties">Properties</a></li>
+        <li><a href="../aw_camera_preview/appBarConst.html">appBarConst</a></li>
+        <li><a href="../aw_camera_preview/cnt.html">cnt</a></li>
+        <li><a href="../aw_camera_preview/imgBuf.html">imgBuf</a></li>
+
+
+      <li class="section-title"><a href="../aw_camera_preview/aw_camera_preview-library.html#enums">Enums</a></li>
+        <li><a href="../aw_camera_preview/ImagePreviewShape.html">ImagePreviewShape</a></li>
+        <li><a href="../aw_camera_preview/LayoutWidget.html">LayoutWidget</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+        <li class="section-title"><a href="../aw_camera_preview/AWCameraPreview-class.html#constructors">Constructors</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/AWCameraPreview.html">AWCameraPreview</a></li>
+
+
+        <li class="section-title">
+          <a href="../aw_camera_preview/AWCameraPreview-class.html#instance-properties">Properties</a>
+        </li>
+          <li><a class="deprecated" href="../aw_camera_preview/AWCameraPreview/appBar.html">appBar</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/cameraOrientation.html">cameraOrientation</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/cameraPosition.html">cameraPosition</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/cameraPreviewAppbar.html">cameraPreviewAppbar</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/capabilityS.html">capabilityS</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/captureCompleted.html">captureCompleted</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/captureTimeOut.html">captureTimeOut</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/capturingImageBoxFit.html">capturingImageBoxFit</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/completedImageBoxFit.html">completedImageBoxFit</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/encryptionServerKey.html">encryptionServerKey</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/facePublicKey.html">facePublicKey</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedback.html">feedback</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackALignment.html">feedbackALignment</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackPadding.html">feedbackPadding</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackPoistionRight.html">feedbackPoistionRight</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionBottom.html">feedbackPositionBottom</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionHeight.html">feedbackPositionHeight</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionLeft.html">feedbackPositionLeft</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionTop.html">feedbackPositionTop</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackPositionWidth.html">feedbackPositionWidth</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackStream.html">feedbackStream</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/feedbackTextstyle.html">feedbackTextstyle</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/getCapturedImagePackage.html">getCapturedImagePackage</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/hashCode.html">hashCode</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/imagePreviewShape.html">imagePreviewShape</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/isCapturing.html">isCapturing</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/isPausedS.html">isPausedS</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/isRunning.html">isRunning</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/key.html">key</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/layoutWidget.html">layoutWidget</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/previewPosition.html">previewPosition</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/profileProperty.html">profileProperty</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/receivePort.html">receivePort</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/selectedCamera.html">selectedCamera</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/serverPackage.html">serverPackage</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/showFeedBack.html">showFeedBack</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/status.html">status</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/statusStream.html">statusStream</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/stopCapture.html">stopCapture</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/streamController.html">streamController</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/threadParameters.html">threadParameters</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/threadStatus.html">threadStatus</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/username.html">username</a></li>
+
+        <li class="section-title"><a href="../aw_camera_preview/AWCameraPreview-class.html#instance-methods">Methods</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/StatefulWidget/createElement.html">createElement</a></li>
+          <li><a href="../aw_camera_preview/AWCameraPreview/createState.html">createState</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/debugDescribeChildren.html">debugDescribeChildren</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/debugFillProperties.html">debugFillProperties</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toDiagnosticsNode.html">toDiagnosticsNode</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/Diagnosticable/toString.html">toString</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringDeep.html">toStringDeep</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/foundation/DiagnosticableTree/toStringShallow.html">toStringShallow</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/toStringShort.html">toStringShort</a></li>
+
+        <li class="section-title inherited"><a href="../aw_camera_preview/AWCameraPreview-class.html#operators">Operators</a></li>
+          <li class="inherited"><a href="https://api.flutter.dev/flutter/widgets/Widget/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    face_capture
+      1.0.001
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
